@@ -21,7 +21,7 @@ export default function MasonryGrid() {
           />
           <div className="p-4 bg-white">
             <h2 className="text-xl font-semibold">{item.alt}</h2>
-            <p className="text-gray-600">Description de l'action {item.alt.toLowerCase()}.</p>
+            <p className="text-gray-600">Description de l action {item.alt.toLowerCase()}.</p>
           </div>
         </div>
       ))}

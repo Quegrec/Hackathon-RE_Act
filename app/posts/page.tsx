@@ -1,6 +1,7 @@
 'use client'
 import { useEffect, useState } from 'react';
 import type { NextPage } from 'next';
+import Image from 'next/image';
 
 type Post = {
   id: number;
@@ -31,7 +32,7 @@ const PostsPage: NextPage = () => {
             key={post.id}
             className="break-inside-avoid bg-white shadow-md rounded-lg overflow-hidden"
           >
-            <img src={post.image} alt={post.title} className="w-full object-cover" />
+            <Image src={post.image} alt={post.title} className="w-full object-cover" />
             <div className="p-4">
               <h2 className="font-semibold text-xl mb-2">{post.title}</h2>
               <p className="text-gray-600">{post.description}</p>
